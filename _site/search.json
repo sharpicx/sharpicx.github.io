@@ -1,0 +1,75 @@
+[
+  
+    {
+      "title"    : "Social Anxiety",
+      "title-lower"    : "social anxiety",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "sekedar-bingung",
+      "tags"     : "",
+      "url"      : "/posts/social-anxiety",
+      "date"     : "2021-02-27 22:33:36 +0700",
+      "content"     : "entah kenapa selama saya hidup. hati dan diri saya merasa seperti malas, jengkel, kesal, pusing, cemas, insecure. Ketika berada di keramaian/kerumunan orang-orang. bukan di kerumunan saja, melainka..."
+    } ,
+  
+    {
+      "title"    : "Linux Rice",
+      "title-lower"    : "linux rice",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "unixpornbspwmlinux-rice",
+      "tags"     : "",
+      "url"      : "/posts/linux-rice",
+      "date"     : "2021-01-15 22:33:36 +0700",
+      "content"     : "akhir-akhir ini saya belom bisa nulis write-up CTF. karena waktu yang sibuk ditambah note-note ringkasan solusi writeup simpanan saya banyak yang hilang sejak ganti Linux Distro ke Archlinux. kenap..."
+    } ,
+  
+    {
+      "title"    : "Archlinux Installation",
+      "title-lower"    : "archlinux installation",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "archlinuxinstallation",
+      "tags"     : "",
+      "url"      : "/posts/archlinux-installation",
+      "date"     : "2020-12-23 22:33:36 +0700",
+      "content"     : "Kata orang sih, kalo pake sistem operasi yang satu ini harus bersusah payah sampai banting tulang dan butuh kesabaran extra tinggi terlebih dahulu sebelum menggunakannya, karena ya mo gimana lagi n..."
+    } ,
+  
+    {
+      "title"    : "Linux VS Windows",
+      "title-lower"    : "linux vs windows",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "pendapat",
+      "tags"     : "",
+      "url"      : "/posts/linux-vs-windows",
+      "date"     : "2020-09-25 22:33:36 +0700",
+      "content"     : "karna kebiasaan pake Kali Linux di VMware dulu waktu jaman jahiliyah jadi terbiasa sih rasa nyaman ketika pentesting atau kegiatan lainnya yang didapat dari sistem operasi linux ini, dan juga belom..."
+    } ,
+  
+    {
+      "title"    : "VulnHub - Infovore: 1",
+      "title-lower"    : "vulnhub - infovore: 1",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "boot2rootRCELFIDockerSSH",
+      "tags"     : "",
+      "url"      : "/posts/infovore",
+      "date"     : "2020-07-15 22:33:36 +0700",
+      "content"     : "kegabutan merajarela, lalu tak disangka akhirnya punya tujuan juga untuk menyelesaikan tantangan boot2root di VulnHub. yaa, walau waktu nulis ini kurang enak badan yaaa jadi pusing gituu, dan gak t..."
+    } ,
+  
+    {
+      "title"    : "Selamat datang",
+      "title-lower"    : "selamat datang",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "prolog",
+      "tags"     : "",
+      "url"      : "/posts/selamat-datang",
+      "date"     : "2020-07-07 22:33:36 +0700",
+      "content"     : "Hay :)ini blog pertama yang saya tulis jd maap ya kalo ada yang salah/kurang dalam gaya penulisan  tertentu (soalnya g pandai tentang SPOK 👉👈). dan yaa, dalam hati juga sebenarnya gk ada niatan unt..."
+    } 
+  
+]

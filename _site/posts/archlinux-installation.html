@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Archlinux Installation</title>
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Archlinux Installation | sharpicx documents</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Archlinux Installation" />
+<meta name="author" content="arin (sharpicx)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Kata orang sih, kalo pake sistem operasi yang satu ini harus bersusah payah sampai banting tulang dan butuh kesabaran extra tinggi terlebih dahulu sebelum menggunakannya, karena ya mo gimana lagi namanya jg mau yang enak itu gk gampang dan gk instan seperti di era zaman milenial ini. Sejak akhir-akhir ini. Maksud saya, bulan desember ini entah kenapa saya mulai tertarik untuk mengganti linux distro saya ke Archlinux. dan hamdalah, sampai sekarang saya masih menggunakan dan menjadi penggemar setia." />
+<meta property="og:description" content="Kata orang sih, kalo pake sistem operasi yang satu ini harus bersusah payah sampai banting tulang dan butuh kesabaran extra tinggi terlebih dahulu sebelum menggunakannya, karena ya mo gimana lagi namanya jg mau yang enak itu gk gampang dan gk instan seperti di era zaman milenial ini. Sejak akhir-akhir ini. Maksud saya, bulan desember ini entah kenapa saya mulai tertarik untuk mengganti linux distro saya ke Archlinux. dan hamdalah, sampai sekarang saya masih menggunakan dan menjadi penggemar setia." />
+<link rel="canonical" href="https://127.0.0.1:4000/posts/archlinux-installation" />
+<meta property="og:url" content="https://127.0.0.1:4000/posts/archlinux-installation" />
+<meta property="og:site_name" content="sharpicx documents" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-12-23T22:33:36+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Archlinux Installation" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://127.0.0.1:4000/posts/archlinux-installation"},"author":{"@type":"Person","name":"arin (sharpicx)"},"url":"https://127.0.0.1:4000/posts/archlinux-installation","description":"Kata orang sih, kalo pake sistem operasi yang satu ini harus bersusah payah sampai banting tulang dan butuh kesabaran extra tinggi terlebih dahulu sebelum menggunakannya, karena ya mo gimana lagi namanya jg mau yang enak itu gk gampang dan gk instan seperti di era zaman milenial ini. Sejak akhir-akhir ini. Maksud saya, bulan desember ini entah kenapa saya mulai tertarik untuk mengganti linux distro saya ke Archlinux. dan hamdalah, sampai sekarang saya masih menggunakan dan menjadi penggemar setia.","@type":"BlogPosting","headline":"Archlinux Installation","dateModified":"2020-12-23T22:33:36+07:00","datePublished":"2020-12-23T22:33:36+07:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script type="text/javascript" src="/assets/js/darkmode.js"></script>
+<link rel="shortcut icon" href="../assets/hanabi.png"><link rel="icon" href="../assets/hanabi.png">
+</head><body>
+  <main class="container">
+    <section class="about">
+      <div class="about-header condensed">
+      <div class="about-title">
+      <a href="/">
+        
+        <img class="gambar" src="/assets/hanabi.png" alt="arin (sharpicx)" />
+        
+      </a>
+      <h2 id="title">
+        <a href="/">arin (sharpicx)</a>
+      </h2>
+      </div><p class="tagline">manusia bodoh</p></div>
+      
+      <ul class="social about-footer condensed"><a href="https://github.com/sharpicx" target="_blank">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://discord.com/users/783025846881353738" target="_blank">
+          <li>
+            <i class="icon-chat"></i>
+          </li>
+        </a><a href="mailto:arin@sharpicx.wtf" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a></ul><p class="about-footer condensed">&copy;
+        2021</p><div class="about-footer condensed">
+        <!--
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+        -->
+      </div>
+    </section>
+    <section class="content">
+      <div class="post-container">
+  <a class="post-link" href="/posts/archlinux-installation">
+    <h2 class="post-title">Archlinux Installation</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date">↳ Dec 23, 2020</div>
+    
+    <ul class="post-categories"><li>archlinux</li><li>installation</li></ul></div>
+  <div class="post">
+    <p>Kata orang sih, kalo pake sistem operasi yang satu ini harus bersusah payah sampai banting tulang dan butuh kesabaran extra tinggi terlebih dahulu sebelum menggunakannya, karena ya mo gimana lagi namanya jg mau yang enak itu gk gampang dan gk instan seperti di era zaman milenial ini. Sejak akhir-akhir ini. Maksud saya, bulan desember ini entah kenapa saya mulai tertarik untuk mengganti <em>linux distro</em> saya ke <a href="https://archlinux.org">Archlinux</a>. dan hamdalah, sampai sekarang saya masih menggunakan dan menjadi penggemar setia.</p>
+
+<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fwww.erkanoz.com%2Fwp-content%2Fuploads%2F2016%2F11%2Farchlinux-logo-dark-1200dpi.b42bd35d5916.png&amp;f=1&amp;nofb=1" alt="gambar1" /></p>
+
+<p>langsung mulai aja nih ya?</p>
+
+<h2 id="summary">Summary</h2>
+<ul>
+  <li>Pengenalan tentang <em>Archlinux</em></li>
+  <li>Menyambungkan koneksi internet</li>
+  <li>Partisi Disk</li>
+  <li>Pengistalan dasar paket-paket dari <em>Archlinux</em></li>
+  <li>Mengatur Bootloader</li>
+  <li>Mengatur Bahasa dan Timezone</li>
+  <li>Membuat User dan Root + Password, begitu juga dengan Hostname</li>
+  <li>Menginstall WM / DE yang diperlukan dan Instalasi Selesai</li>
+  <li>Rahasia: Trik cepat untuk menginstal semua ini :D</li>
+</ul>
+
+<p>(belom selesai nulis sibuk)</p>
+
+<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FDnGL_SqV4AAfpzf.jpg&amp;f=1&amp;nofb=1" width="300px" /></p>
+
+  </div>
+  
+  <div id="disqus_thread" style="margin-top:25px"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://127.0.0.1:4000/https://127.0.0.1:4000/posts/archlinux-installation';
+      this.page.identifier = 'https://127.0.0.1:4000/https://127.0.0.1:4000/posts/archlinux-installation';
+    };
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://z04ff.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+      powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+    <footer class="condensed">
+      <ul class="social about-footer condensed"><a href="https://github.com/sharpicx" target="_blank">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://discord.com/users/783025846881353738" target="_blank">
+          <li>
+            <i class="icon-chat"></i>
+          </li>
+        </a><a href="mailto:arin@sharpicx.wtf" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a></ul><p class="about-footer condensed">&copy;
+        2021</p><div class="about-footer condensed">
+        <!--
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+        -->
+      </div>
+    </footer>
+  </main>
+  
+  <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+  
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  
+</body>
+
+</html>

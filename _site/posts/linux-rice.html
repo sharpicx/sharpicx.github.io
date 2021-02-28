@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Linux Rice</title>
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Linux Rice | sharpicx documents</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Linux Rice" />
+<meta name="author" content="arin (sharpicx)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="akhir-akhir ini saya belom bisa nulis write-up CTF. karena waktu yang sibuk ditambah note-note ringkasan solusi writeup simpanan saya banyak yang hilang sejak ganti Linux Distro ke Archlinux. kenapa bisa hilang? karena waktu install ini OS terlalu buru-buru dengan rasa kesal yang menjadi-jadi, ribet nginstallnya." />
+<meta property="og:description" content="akhir-akhir ini saya belom bisa nulis write-up CTF. karena waktu yang sibuk ditambah note-note ringkasan solusi writeup simpanan saya banyak yang hilang sejak ganti Linux Distro ke Archlinux. kenapa bisa hilang? karena waktu install ini OS terlalu buru-buru dengan rasa kesal yang menjadi-jadi, ribet nginstallnya." />
+<link rel="canonical" href="https://127.0.0.1:4000/posts/linux-rice" />
+<meta property="og:url" content="https://127.0.0.1:4000/posts/linux-rice" />
+<meta property="og:site_name" content="sharpicx documents" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-15T22:33:36+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Linux Rice" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://127.0.0.1:4000/posts/linux-rice"},"author":{"@type":"Person","name":"arin (sharpicx)"},"url":"https://127.0.0.1:4000/posts/linux-rice","description":"akhir-akhir ini saya belom bisa nulis write-up CTF. karena waktu yang sibuk ditambah note-note ringkasan solusi writeup simpanan saya banyak yang hilang sejak ganti Linux Distro ke Archlinux. kenapa bisa hilang? karena waktu install ini OS terlalu buru-buru dengan rasa kesal yang menjadi-jadi, ribet nginstallnya.","@type":"BlogPosting","headline":"Linux Rice","dateModified":"2021-01-15T22:33:36+07:00","datePublished":"2021-01-15T22:33:36+07:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script type="text/javascript" src="/assets/js/darkmode.js"></script>
+<link rel="shortcut icon" href="../assets/hanabi.png"><link rel="icon" href="../assets/hanabi.png">
+</head><body>
+  <main class="container">
+    <section class="about">
+      <div class="about-header condensed">
+      <div class="about-title">
+      <a href="/">
+        
+        <img class="gambar" src="/assets/hanabi.png" alt="arin (sharpicx)" />
+        
+      </a>
+      <h2 id="title">
+        <a href="/">arin (sharpicx)</a>
+      </h2>
+      </div><p class="tagline">manusia bodoh</p></div>
+      
+      <ul class="social about-footer condensed"><a href="https://github.com/sharpicx" target="_blank">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://discord.com/users/783025846881353738" target="_blank">
+          <li>
+            <i class="icon-chat"></i>
+          </li>
+        </a><a href="mailto:arin@sharpicx.wtf" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a></ul><p class="about-footer condensed">&copy;
+        2021</p><div class="about-footer condensed">
+        <!--
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+        -->
+      </div>
+    </section>
+    <section class="content">
+      <div class="post-container">
+  <a class="post-link" href="/posts/linux-rice">
+    <h2 class="post-title">Linux Rice</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date">↳ Jan 15, 2021</div>
+    
+    <ul class="post-categories"><li>unixporn</li><li>bspwm</li><li>linux-rice</li></ul></div>
+  <div class="post">
+    <p>akhir-akhir ini saya belom bisa nulis write-up CTF. karena waktu yang sibuk ditambah note-note ringkasan solusi writeup simpanan saya banyak yang hilang sejak ganti <em>Linux Distro</em> ke <a href="https://archlinux.org">Archlinux</a>. kenapa bisa hilang? karena waktu install ini OS terlalu buru-buru dengan rasa kesal yang menjadi-jadi, ribet nginstallnya.</p>
+
+<h2 id="apa-itu-linux-rice">Apa itu <strong>Linux Rice</strong></h2>
+<p>menurut saya, <strong>Linux Rice</strong> memiliki arti secara istilah berasal dari <em>Linux</em> atau <em>GNU/Linux</em> yaitu sebuah sistem operasi yang <em>open-source</em> alias bisa <em>bisa dimodifikasi dan bisa dikembangkan siapa saja</em>. sedangkan <em>Rice</em> sendiri memiliki arti <em>Nasi</em> atau <em>Beras</em>, maksud Rice disini sebenarnya bukan <em>Nasi</em> ataupun <em>Beras</em>. Tetapi, <em>RICE stands for Race Inspired Cosmetic Enhancement</em>. merujuk pada mobil sport buatan Asia yang memiliki banyak modifikasi dan sedikit atau tanpa modifikasi internal.</p>
+
+<h2 id="komunitas-linux-ricing">Komunitas Linux Ricing</h2>
+<p><a href="https://reddit.com/r/unixporn">r/unixporn</a>, sebuah komunitas untuk pecinta <em>Unix Customization</em> yang membahas tentang cara bagaimana mengkustomisasi / mengkonfigurasi sebuah sistem operasi linux.</p>
+
+<h2 id="properti-yang-dibutuhkan">Properti Yang Dibutuhkan.</h2>
+<ul>
+  <li>
+    <h3 id="operating-system">Operating System</h3>
+    <p>ini adalah komponen yang paling penting bagi sejuta umat, yaitu, sistem operasi. tanpa sistem operasi semua tidak berjalan semesti yang diinginkan. sedangkan sistem operasi sendiri
+adalah sebuah system software yang dimana untuk mengatur hardware dari komputer. dan juga sistem operasi yang digunakan adalah <em>Linux</em>, contohnya, <a href="https://archlinux.org">Arch Linux</a>, <a href="https://debian.org">Debian</a>, <a href="https://voidlinux.org">Void Linux</a>, <a href="https://gentoo.org">Gentoo</a>.</p>
+  </li>
+  <li>
+    <h3 id="window-manager">Window Manager</h3>
+    <p>adalah sebuah sistem software yang dimana untuk mengatur tampilan dan tata letak dari <em>window</em> dalam sistem <em>Graphical User Interface</em> / <em>GUI</em>. <strong>Window Manager</strong> sendiri dibuat atau didesain untuk membantu menyediakan sebuah <em>desktop environment</em>. misalnya seperti, <em>i3-gaps</em>, <em>bspwm</em>, <em>dwm</em>, <em>awesome</em>, <em>openbox</em>, <em>fluxbox</em>, dll.</p>
+  </li>
+  <li>
+    <h3 id="panel--bar">Panel / Bar</h3>
+    <p>sebuah program yang digunakan untuk menampilkan status, keadaan dan informasi tentang <em>Network</em>, <em>Persentase Baterai</em>, <em>Memory</em>, <em>Volume Suara</em>, <em>Kecepatan Internet</em>, <em>Kalender</em>, dll. contohnya, <a href="https://github.com/polybar/polybar">polybar</a>, <a href="https://github.com/LemonBoy/bar">lemonbar</a>.</p>
+  </li>
+  <li>
+    <h3 id="app-launcher">App Launcher</h3>
+    <p>sebuah program yang digunakan untuk menjalankan suatu program selain menggunakan Terminal Emulator. contohnya, <a href="https://github.com/davatorium/rofi">rofi</a>.</p>
+  </li>
+  <li>
+    <h3 id="display-manager">Display Manager</h3>
+    <p>adalah program yang digunakan untuk masuk ke layar GUI untuk desktop sistem operasi linux. Setelah masuk ke Graphical User Interface, kendali sepenuhnya diberikan kepada WM. DM menyediakan fitur seperti memilih sesi DE/WM yang akan digunakan dan fitur reboot, halt, suspend. contohnya, <a href="https://github.com/canonical/lightdm">LightDM</a>, <a href="http://www.linuxfromscratch.org/blfs/view/8.4/x/lxdm.html">LXDM</a>.</p>
+  </li>
+  <li>
+    <h3 id="window-compositor">Window Compositor</h3>
+    <p>suatu program yang berfungsi untuk mengatur transparansi, animasi, bayangan, dll. pada window manager. contohnya <a href="https://github.com/chjj/compton">compton</a> atau <a href="https://github.com/yshui/picom">picom</a>, dll.</p>
+  </li>
+  <li>
+    <h3 id="screen-locker">Screen Locker</h3>
+    <p>sebuah program yang digunakan sebagai tampilan lockscreen pada window manager. contohnya, <a href="https://github.com/pavanjadhaw/betterlockscreen">betterlockscreen</a>, <a href="https://i3wm.org/i3lock/">i3lock</a>, dll.</p>
+  </li>
+  <li>
+    <h3 id="terminal-emulator">Terminal Emulator</h3>
+    <p>adalah program yang digunakan alias berfungsi sebagai sarana interaksi dengan <em>Unix-Shell</em> seperti menjalankan program, mengirim perintah, mengatur sistem, dll. contohnya, <a href="https://github.com/thestinger/termite">termite</a>, <a href="https://st.suckless.org/">simple-terminal</a>, <a href="https://sw.kovidgoyal.net/kitty/">kitty</a>, dan sebagainya.</p>
+  </li>
+  <li>
+    <h3 id="notification-daemon">Notification-Daemon</h3>
+    <p>dan yang terakhir adalah sebuah program yang digunakan atau berfungsi sebagai penampil <em>pop-up</em>
+notifikasi. contoh, <a href="https://dunst-project.org/">dunst</a>, dan masih banyak lagi.</p>
+  </li>
+</ul>
+
+<h2 id="pendapat-saya-tentang-wm--de">Pendapat Saya Tentang WM / DE</h2>
+<p>kenapa saya lebih memilih <strong>WM (Window Manager)</strong> timbang <strong>DE (Desktop Environment)</strong>?</p>
+<ul>
+  <li>pertama, menggunakan <em>DE</em> sama saja dengan menggunakan <strong>Windows</strong> tidak ada sensasi yang menarik perhatian, malah yang ada tambah bosan dan tidak terlihat keren.</li>
+  <li>kedua, <em>DE</em> itu lebih Instan dan tidak bisa dimodifkasi untuk lebih ringan atau sesuai selera.</li>
+  <li>ketiga, <em>DE</em> itu entah kenapa dapat mengembalikkan ingatan saya kepada sistem operasi milik Microsoft.</li>
+</ul>
+
+<p>dan juga tentang <em>WM</em> yang saya sukai yaitu berbasis <em>tiling window</em> seperti, <em>i3, bspwm, dwm</em>, dll. kenapa? karena keseruan yang didapat itu masuk. dan juga menurut saya menggunakan WM itu mempunyai banyak manfaat diantaranya,</p>
+<ul>
+  <li>Menambah wawasan alias ingin mendalami pengetahuan tentang sistem operasi linux.</li>
+  <li>Kebebasan untuk memilih komponen/properti yang dibutuhkan.</li>
+  <li>Bisa memamerkan hasil jerih payah sendiri dengan menggunakan <strong>Archlinux + WM</strong>.</li>
+  <li>Menambah bahasa pemrograman <em>(scripting)</em> seperti, <strong>Shell</strong>, <strong>Python</strong>, <strong>Rust</strong>.</li>
+  <li>Lebih ringan ketimbang DE yang instan.</li>
+  <li>User-friendly alias nyaman digunakan.</li>
+</ul>
+
+<h2 id="contoh-linux-rice-milik-saya">Contoh Linux Rice Milik Saya</h2>
+<p>walaupun ukuran resolusi kecil <em>1366x768</em> dengan spec laptop seadanya, tp saya sudah bersyukur tidak memakai lagi sistem operasi milik microsoft yang penuh bacotan di laptop saya ini. semoga dengan adanya blog ini, di masa depan ketika sudah memiliki setup-setup yang saya butuh sekaligus inginkan bisa tercapai secepatnya.</p>
+
+<p><img src="https://s4.gifyu.com/images/ezgif-6-caef54386e61.gif" alt="gif" /><br />
+<em>(screenshot: 28/02/2021)</em></p>
+
+<ul>
+  <li>OS: <a href="https://archlinux.org">Arch Linux</a></li>
+  <li>Panel/Bar: <a href="https://github.com/polybar/polybar">Polybar</a></li>
+  <li>App Launcher: <a href="https://github.com/davatorium/rofi">Rofi</a> / <a href="http://tools.suckless.org/dmenu/">Dmenu</a></li>
+  <li>WM: <a href="https://github.com/baskerville/bspwm">Bspwm</a></li>
+  <li>Display Manager: <a href="https://github.com/canonical/lightdm">LightDM</a></li>
+  <li>Screen Locker: <a href="https://github.com/pavanjadhaw/betterlockscreen">betterlockscreen</a></li>
+  <li>Terminal: <a href="https://github.com/thestinger/termite/">termite</a></li>
+  <li>Window Compositor: <a href="https://github.com/yshui/picom">picom</a></li>
+  <li>Notification-Daemon: <a href="https://dunst-project.org/">dunst</a></li>
+</ul>
+
+<h2 id="referensi">Referensi</h2>
+<ul>
+  <li><a href="https://www.urbandictionary.com/define.php?term=Rice%20car">https://www.urbandictionary.com/define.php?term=Rice%20car</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Operating_system">https://en.wikipedia.org/wiki/Operating_system</a></li>
+  <li><a href="https://reddit.com/r/unixporn">https://reddit.com/r/unixporn</a></li>
+</ul>
+
+  </div>
+  
+  <div id="disqus_thread" style="margin-top:25px"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://127.0.0.1:4000/https://127.0.0.1:4000/posts/linux-rice';
+      this.page.identifier = 'https://127.0.0.1:4000/https://127.0.0.1:4000/posts/linux-rice';
+    };
+    (function () {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://z04ff.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+      powered by Disqus.</a></noscript>
+</div>
+
+    </section>
+    <footer class="condensed">
+      <ul class="social about-footer condensed"><a href="https://github.com/sharpicx" target="_blank">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://discord.com/users/783025846881353738" target="_blank">
+          <li>
+            <i class="icon-chat"></i>
+          </li>
+        </a><a href="mailto:arin@sharpicx.wtf" target="_blank">
+          <li>
+            <i class="icon-mail-alt"></i>
+          </li>
+        </a></ul><p class="about-footer condensed">&copy;
+        2021</p><div class="about-footer condensed">
+        <!--
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+        -->
+      </div>
+    </footer>
+  </main>
+  
+  <script type="text/javascript" src="/assets/js/darkmode.js"></script>
+  
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  
+</body>
+
+</html>
